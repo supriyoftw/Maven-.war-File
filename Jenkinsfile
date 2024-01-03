@@ -5,7 +5,7 @@ pipeline
            maven 'maven'
            }
       stages {
-             stage ('compile') {
+             stage('compile') {
                     scripts {
                             sh 'mvn compile'
                      }
