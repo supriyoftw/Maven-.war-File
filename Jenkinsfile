@@ -5,17 +5,17 @@ pipeline
            maven 'maven'
            }
       stages {
-             stage ( 'compile' ) {
+             stage ('compile') {
                     scripts {
                             sh 'mvn compile'
                      }
               }
-              stage( 'test' ) {
+              stage('test') {
                      steps {
                              sh 'mvn test'
                       }
                }
-               stage( 'package' ) {
+               stage('package') {
                        steps {
                                sh 'mvn package'
                         }
