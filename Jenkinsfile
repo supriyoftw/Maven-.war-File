@@ -1,13 +1,13 @@
 pipeline
 {
      agent any
-      tools {
-           maven 'maven'
+     tools {
+         maven 'maven'
            }
       stages {
              stage('compile') {
-                    scripts {
-                            sh 'mvn compile'
+                    steps {
+                        sh 'mvn compile'
                      }
               }
               stage('test') {
